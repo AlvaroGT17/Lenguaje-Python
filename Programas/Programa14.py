@@ -11,7 +11,10 @@ print(promedio)
 
 if promedio >= 7:
   print("Promocionado")
-elif promedio >=4:
+elif promedio >=4 and promedio<7:
   print("Regular")
 else:
   print("Suspenso")
+
+# En python los operadores lógicos como & no se representan con dicho simbolo sino que se escriben tal cual es decir en este ejercicio
+# la sentencia del elif daba error por que al añadir el operador lógico "and" lo añadía como simbolo y no como la palabra escrita.
