@@ -11,7 +11,7 @@ aciertos=int(input("Cuantas preguntas acertó? "))
 porcentaje=(aciertos*100)/numeropreguntas
 
 if porcentaje>=90:
-  print("Nivel Maximo")
+  print("Nivel Máximo")
 elif porcentaje>=75 and porcentaje<90:
   print("Nivel Medio")
 elif porcentaje>=50 and porcentaje<75:
