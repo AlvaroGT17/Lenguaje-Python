@@ -1,17 +1,25 @@
-# Ingresar una oración que pueden tener letras tanto en mayúsculas como minúsculas. Contar la cantidad de vocales. Crear un segundo string con toda
-# la oración en minúsculas para que sea más fácil disponer la condición que verifica que es una vocal.
+# Solicitar el ingreso de una clave por teclado y almacenarla en una cadena de caracteres. Controlar que el string ingresado tenga entre
+# 10 y 20 caracteres para que sea válido, en caso contrario mostrar un mensaje de error.
 
-oracion=input("Escribe una oración.")
-oracionminusculas=oracion.lower()
-x=0
-vocales=0
 
-print("La oracion pasada todo a minusculas es: ")
-print(oracionminusculas)
+numero=0
 
-while x<len(oracionminusculas):
-  if oracionminusculas[x]=="a" or oracionminusculas[x]=="e" or oracionminusculas[x]=="i" or oracionminusculas[x]=="o" or oracionminusculas[x]=="u":
-    vocales=vocales+1
-  x=x+1
+clave=input("Ingresa una clave de entre 10 y 20 caracteres.")
+numero=len(clave)
 
-print(" La oración consta de ", vocales, "vocales.")
+if numero>=10 and numero<=20:
+  print("Contraseña aceptada.")
+else:
+  if numero<10:
+    print("ERROR!!! La contraseña solo tiene ", numero, "caracteres.")
+  elif numero>20:
+    print("ERROR!!! La contraseña tiene mas de 20 caracteres.")
+
+'''Una forma mas directa de hacer este ejercicio es el siguiente
+
+clave=input("Ingrese una clave que tenga entre 10 y 20 caracteres:")
+if len(clave)>=10 and len(clave)<=20:
+    print("Largo correcto")
+else:
+    print("Largo incorrecto")
+'''

@@ -1,12 +1,17 @@
-# Cargar una oración por teclado. Mostrar luego cuantos espacios en blanco se ingresaron. Tener en cuenta que un espacio en blanco es igual a
-# " ", en cambio una cadena vacía es ""
+# Ingresar una oración que pueden tener letras tanto en mayúsculas como minúsculas. Contar la cantidad de vocales. Crear un segundo string con toda
+# la oración en minúsculas para que sea más fácil disponer la condición que verifica que es una vocal.
 
-oracion=input("Ingresa una oración: ")
+oracion=input("Escribe una oración.")
+oracionminusculas=oracion.lower()
 x=0
-espacios=0
-while x<len(oracion):
-  if oracion[x]==" ":
-    espacios=espacios+1
+vocales=0
+
+print("La oracion pasada todo a minusculas es: ")
+print(oracionminusculas)
+
+while x<len(oracionminusculas):
+  if oracionminusculas[x]=="a" or oracionminusculas[x]=="e" or oracionminusculas[x]=="i" or oracionminusculas[x]=="o" or oracionminusculas[x]=="u":
+    vocales=vocales+1
   x=x+1
 
-print("La oración cuenta con ", espacios, "espacios.")
+print(" La oración consta de ", vocales, "vocales.")
