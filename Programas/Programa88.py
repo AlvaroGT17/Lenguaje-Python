@@ -1,15 +1,5 @@
 # Se debe crear y cargar una lista donde almacenar 5 sueldos. Desplazar el valor mayor de la lista a la última posición.
 
-'''sueldos=[]
-sueldomenormayor=[]
-
-for x in range(5):
-  sueldos.append=(int(input("Ingrese el sueldo del operario.")))
-
-for x in range(5):
-  if sueldos[x]'''
-
-
 sueldos=[]
 
 for x in range(5):
