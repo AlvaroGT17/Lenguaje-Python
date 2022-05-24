@@ -19,7 +19,7 @@ for h in range(4):
 
 print(sueldo)'''
 
-# Aunque una forma mucho más eficiente de proceder es haciendo que el for interno realice menos comprobaciones 
+# Aunque una forma mucho más eficiente de proceder es haciendo que el for interno realice menos comprobaciones
 # a medida que avanza el for externo.
 
 sueldo=[]
