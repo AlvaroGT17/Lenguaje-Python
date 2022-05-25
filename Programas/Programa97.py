@@ -6,6 +6,8 @@ listadelistas=[]
 sublista=[]
 valor=0
 
+# Construir los sublistados
+
 for y in range(1,6):
   for x in range(y):
     sublista.append(int(input(f"Ingresa un número para introducirlo en la sublista {y}: ")))
@@ -17,6 +19,9 @@ input("presiona enter para continuar...")
 
 print("")
 print(listadelistas)
+
+# Aquí lo que hacemos es recorrer de nuevo el listado principal con el primer for y con el segundo for repasamos el contenido de las sublistas 
+# y ejecutamos la suma de los valores.
 
 for k in range(len(listadelistas)):
     for x in range(len(listadelistas[k])):
