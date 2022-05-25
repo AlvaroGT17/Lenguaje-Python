@@ -4,15 +4,23 @@
 
 listadelistas=[]
 sublista=[]
+valor=0
 
 for y in range(1,6):
   for x in range(y):
     sublista.append(int(input(f"Ingresa un número para introducirlo en la sublista {y}: ")))
     print(sublista)
-    listadelistas.append(sublista)
-    print(listadelistas)
+  listadelistas.append(sublista)
   sublista=[]
+  print(listadelistas)
 input("presiona enter para continuar...")
 
-
+print("")
 print(listadelistas)
+
+for k in range(len(listadelistas)):
+    for x in range(len(listadelistas[k])):
+      valor=valor+listadelistas[k][x]
+    print(valor)
+
+print("El valor de todos los campos de la lista y sublistas es de: ",valor)
