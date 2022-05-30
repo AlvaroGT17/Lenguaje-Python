@@ -11,26 +11,67 @@ paises=[]
 temperaturas=[]
 ingresotemperatura=[]
 suma=0
-promedio=0
+promedio=[]
+mayortemperatura=0
 
+# Intento fallido: 
 
-for x in range(4):
+'''for x in range(4):
   paises.append(input(f"Ingrese el nombre del {x+1}º País: "))
   for y in range(3):
     ingresotemperatura.append(float(input(f"Ingrese la {y+1}º temperatura del {x+1}º país introducido: ")))
   temperaturas.append(ingresotemperatura)
   ingresotemperatura=[]
 
-print(paises)
-print(temperaturas)
+print("La lista de países introducidos son: ",paises)
+print("La temperatura de los países respectivamente es: ",temperaturas)
 
 for x in range(len(paises)):
-  print (paises[x])
+  print (f"El país {paises[x]} tiene un promedio de temperaturas de:")
   for y in range(len(temperaturas)):
     for z in range(len(temperaturas[y])):
-      suma=suma+temperaturas[y][z]
-    promedio=suma/3
+      suma=(suma+temperaturas[y][z])//3
+    promedio.append(suma)
     suma=0
-
   print(promedio)
-  promedio=0
+
+
+
+
+
+    if promedio>mayortemperatura:
+      mayortemperatura=x
+    promedio=0
+print("El país con mayor temperatura es: ",paises[mayortemperatura])'''
+
+
+paises = []
+temperaturas = []
+promediotemp = []
+
+for x in range(4):
+    nom = input("Ingrese el nombre del pais:")
+    paises.append(nom)
+    temp1 = int(input("Ingrese primer temperatura:"))
+    temp2 = int(input("Ingrese segunda temperatura:"))
+    temp3 = int(input("Ingrese tercer temperatura:"))
+    temperaturas.append([temp1, temp2, temp3])
+
+print("Paises y temperaturas medias de los ultimos tres meses mensuales")
+for x in range(4):
+    print(paises[x], temperaturas[x][0],
+          temperaturas[x][1], temperaturas[x][2])
+
+for x in range(4):
+    pro = (temperaturas[x][0]+temperaturas[x][1]+temperaturas[x][2])//3
+    promediotemp.append(pro)
+
+print("Paises y temperaturas medias trimestrales")
+for x in range(4):
+    print(paises[x], promediotemp[x])
+
+posmayor = 0
+for x in range(1, 4):
+    if promediotemp[x] > promediotemp[posmayor]:
+        posmayor = x
+print("Pais con temperatura media trimestral mayor:", paises[posmayor])
