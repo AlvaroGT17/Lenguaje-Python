@@ -10,7 +10,7 @@ def cuadrado2(valor1):
 
 def ingreso():
   valor=(float(input("Ingrese el valor de un lado: ")))
-  eleccion=(int(input("Ingrese 1 para conocer el perímetro o 2 para conocer la superficie.")))
+  eleccion=(int(input("Ingrese 1 para conocer el perímetro o 2 para conocer la superficie: ")))
 
   if eleccion == 1:
     cuadrado(valor)
