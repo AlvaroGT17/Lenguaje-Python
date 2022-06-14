@@ -19,6 +19,9 @@ def palabra(string1, string2):
 
   if numeroletras1 > numeroletras2:
     return string1
+  elif numeroletras1==numeroletras2:
+    iguales="ninguna por que son iguales"
+    return iguales
   else:
     return string2
 
@@ -28,4 +31,4 @@ palabras1=(input("Ingrese la cadena de caracteres deseada: "))
 numero1=(conteo(palabras1))
 palabras2=(input("Ingrese la cadena de caracteres deseada: "))
 numero2=(conteo(palabras2))
-print(f"La cadena de caracteres con más letras es: {palabra(palabras1, palabras2)} con un total de {comparacion(numero1, numero2)}")
+print(f"La cadena de caracteres con más letras es: {palabra(palabras1, palabras2)}, con un total de {comparacion(numero1, numero2)} caracteres.")
