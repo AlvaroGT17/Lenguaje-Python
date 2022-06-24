@@ -26,8 +26,8 @@ def impresion(articulo, precio):
 def incrementoprecio(articulo, precio):
   aumento=0
   for x in range(len(articulo)):
-    aumento=precio[x]+(precio[x]*0.05)
-    print(f"El articulo {articulo[x]} tiene un precio {aumento}€ con un aumento del 5%")
+    aumento=precio[x]+(precio[x]*0.21)
+    print(f"El articulo {articulo[x]} tiene un precio {aumento}€ con un aumento del 21% por el I.V.A")
     aumento=0
   print("")
 
@@ -39,7 +39,22 @@ def mayorvalor(articulo, precio):
       precioarticulo=precio[x]
       nombrearticulo=articulo[x]
   print(f"El articulo con mayor valor es el articulo {nombrearticulo} con un precio de {precioarticulo}€")
+  print("")
 
+
+def mayoqueseleccion(articulo, precio):
+  nombrearticulo = ""
+  precioarticulo = 0
+  valor=float(input("Ingrese el valor de referencia: "))
+  for x in range(len(articulo)):
+    if precio[x] < valor:
+        precioarticulo = precio[x]
+        nombrearticulo = articulo[x]
+        print(f"El articulo {nombrearticulo} tiene el precio por debajo del ingresado, {valor}€, teniendo un precio de {precioarticulo}€")
+    elif precio[x] == valor:
+      precioarticulo = precio[x]
+      nombrearticulo = articulo[x]
+      print(f"El articulo {nombrearticulo} tiene el precio exacto ingresado {valor}€")
 
 # Cuerpo principal del programa:
 
@@ -47,3 +62,4 @@ articulo, precio=ingreso()
 impresion(articulo, precio)
 incrementoprecio(articulo, precio)
 mayorvalor(articulo, precio)
+mayoqueseleccion(articulo, precio)
