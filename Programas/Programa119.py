@@ -1,4 +1,4 @@
-# Desarrollar una función que reciba un string como parámetro y nos muestre la cantidad de vocales.
+cmd# Desarrollar una función que reciba un string como parámetro y nos muestre la cantidad de vocales.
 # Llamarla desde el bloque principal del programa 3 veces con string distintos.
 
 
