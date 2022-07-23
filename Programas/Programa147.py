@@ -1,4 +1,5 @@
-# Definir una tupla con tres valores enteros. Convertir el contenido de la tupla a tipo lista. Modificar la lista y luego convertir la lista en tupla.
+# Desarrollar una función que solicite la carga del dia, mes y año y almacene dichos datos en una tupla que luego debe retornar.
+# La segunda función a implementar debe recibir una tupla con la fecha y mostrarla por pantalla.
 
 def cargarfecha():
   dia=int(input("Ingrese el día: "))
