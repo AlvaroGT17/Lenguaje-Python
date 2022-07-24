@@ -5,7 +5,7 @@
 def creacion_lista():
   pais_habitantes=[]
   for x in range(5):
-    pais=input("Ingrese el nombre del Pais: ")
+    pais=input("Ingrese el nombre del País: ")
     habitantes=int(input("Ingrese el número de habitantes: "))
     pais_habitantes.append((pais,habitantes))
     pais=""
