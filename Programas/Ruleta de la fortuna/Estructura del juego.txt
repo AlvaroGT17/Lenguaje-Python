@@ -1,0 +1,44 @@
+- Presentación de los jugadores:
+
+crear un menu donde nos de a elegir el número de jugadores he introducir sus nombres y marcadores de puntuación tanto el total como el parcial, y selecionar el número de paneles a los que van a jugar.
+
+- Establecer el orden de jugadores:
+
+esto lo haremos sacando cada jugador un número al azar y ordenando los números de mayor a menor, en caso de empate tendran que tirar de nuevo solo los jugadores que han sacando el mismo número.
+
+- Establecer el panel para jugar:
+
+habra una base de datos con todas las frases precargadas con sus pistas, haremos que el programa genere un número aleatorio y asi seleccionar una frase entre todas.
+
+- Generar la ruleta de la suerte:
+
+la ruleta esta dividida en 24 porciones por lo que nuestro arrays tendra 24 posiciones
+
+	1.- Quiebra: pone el contador de puntos parcialciales a 0 y pierdes el turno.
+	2.- Premio: te da una bonificación de 0.5 al marcador parcial al final del panel.
+	3.- 50: otorga 50 puntos por cada letra descubierta.
+	4.- 25: otorga 25 puntos por cada letra descubierta.
+	5.- 75: otorga 75 puntos por cada letra descubierta.
+	6.- Doble letra: permite revelar 2 letras en el mismo turno.
+	7.- Pierdes turno: hace que el turno pase al siguiente jugador.
+	8.- ?: hace que te pueda tocar entre: Quiebra , Doble letra, Pierdes turno, Todas las vocales.
+	9.- 75: otorga 75 puntos por cada letra descubierta.
+	10.- 300: otorga 300 puntos por cada letra descubierta.
+	11.- 200: otorga 200 puntos por cada letra descubierta.
+	12.- Quiebra: pone el contador de puntos paciales a 0 y pierdes el turno.
+	13.- 100: otorga 200 puntos por cada letra descubierta.
+	14.- Gran Premio: te da una bonificación de X2 al marcador parcial al final del panel.
+	15.- Elimina premios: quita los premios acumulados.
+	16.- 1/2: hace que ganes la mitad de los premios al final del turno.
+	17.- 75: otorga 75 puntos por cada letra descubierta.
+	18.- Pierdes turno: hace que el turno pase al siguiente jugador.
+	19.- 25: otorga 25 puntos por cada letra descubierta.
+	20.- 50: otorga 50 puntos por cada letra descubierta.
+	21.- 0: hace que en este turno tu puntuación sea 0.
+	22.- Todas las vocales: hace que se revelen todas las vocales dando por ello la puntuacion estandar.
+	23.- X2: hace que los puntos obtenidos en esta tirada se multipliquen por 2.
+	24.- 200: otorga 200 puntos por cada letra descubierta.
+
+- Turno de cada jugador:
+
+al comienzo de cada jugador se tirara de la ruleta, esto lo haremos generando un número aleatorio comprendido entre el 0 y el 23, para ver que posición del array que toca,dando paso a ver las condiciones de la tirada y asi poder proceder a la seleccionar la consonante deseada o compra de vocales o resolución del panel.
