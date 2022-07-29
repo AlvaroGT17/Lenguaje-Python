@@ -42,29 +42,3 @@ la ruleta esta dividida en 24 porciones por lo que nuestro arrays tendra 24 posi
 - Turno de cada jugador:
 
 al comienzo de cada jugador se tirara de la ruleta, esto lo haremos generando un número aleatorio comprendido entre el 0 y el 23, para ver que posición del array que toca,dando paso a ver las condiciones de la tirada y asi poder proceder a la seleccionar la consonante deseada o compra de vocales o resolución del panel.
-
-- Generar usuario
-
-La clase usuario debera contener:
-	1.- Nombre
-	2.- Contador parcial
-	3.- Contador total
-	4.- Puntuacion base:
-		- siempre 12 puntos
-	5.- Puntuntuacion modificada por la ruleta:
-		- 0
-		- 25
-		- 50
-		- 75
-		- 100
-		- 200
-		- 300
-	6.- Premios
-		- X 0.5 al final del panel
-		- X 2 al final del panel
-		- X 2 al final del turno
-	7.- Penalizaciones
-		- Quiebra
-		- Pierdes turno
-		- Elimina premios
-		- 1/2
