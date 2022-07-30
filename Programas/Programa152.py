@@ -22,9 +22,24 @@ def ingreso_empleados():
   return empleados_sueldos
 
 def total_sueldos(empleados_sueldos):
+  ganancias_totales=[]
   for x in range(len(empleados_sueldos)):
+    total = empleados_sueldos[x][1][0] + empleados_sueldos[x][1][1] + empleados_sueldos[x][1][2]
+    print("El empleado ", empleados_sueldos[x][0],"cobro un total de: ",total)
+    ganancias_totales.append((empleados_sueldos[x][0],total))
+  print(ganancias_totales)
+  return ganancias_totales
+
+def sueldos_mayores(ganancias_totales):
+  for x in range(len(ganancias_totales)):
+    if ganancias_totales[x][1]>10000:
+      print("El trabajador", ganancias_totales[x][0], "tiene unas ganancias por encima de 10000 €")
+    else:
+      print("El trabajador", ganancias_totales[x][0], "no llega a la media.")
+
 
 # Cuerpo principal del programa.
 
-ingreso_empleados()
-total_sueldos(empleados_sueldos)
+empleados_sueldos=ingreso_empleados()
+ganancias_totales=total_sueldos(empleados_sueldos)
+sueldos_mayores(ganancias_totales)
